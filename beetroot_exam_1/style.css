@@ -6,42 +6,36 @@ body {
 
 body {
     font-family: "Josefin Sans", sans-serif;
-    margin: 0 auto;
     background-color: #f2f2f2;
 }
 
-main {
-    margin: 0 auto;
-    /* margin-top: 5%; */
-    /* padding: 15px; */
-    width: 1770px;
-    /* max-width: 1770px; */
-    /* min-height: 4270px; */
-    background-color: white;
-}
-
 .header__main {
-    /* width: 1770px; */
     height: 737px;
+    /* width: 1770px; */
+    margin: 0 auto;
+    box-sizing: border-box;
     margin-top: 0px;
-    padding-top: 314px;
+    margin-bottom: 0px;
+    padding-top: 17.3%;
     padding-bottom: 142px;
     background-image: url(/img/landskape_1.svg);
-    /* background-size: 100%; */
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-size: cover;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+    /* margin: 0 auto;
+    box-sizing: border-box; */
+    /* -moz-background-size: 100%;
+    -o-background-size: 100%;  */
+    /* background-size: 100%; */
 }
 
 .header__box {
     width: 655px;
-    height: 290px;
-    margin-bottom: 142px;
+    height: 285px;
+    margin: 0 auto;
+    box-sizing: border-box;
     /* background-color: aqua; */
 }
 
@@ -49,30 +43,32 @@ main {
     width: 345px;
     height: 26px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-top: 5px;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 6.5px;
     color: #ffffff;
+    /* background-color: hotpink; */
 }
 
 .header__form {
     display: flex;
-    border: 2.5px solid white;
     margin: 0 auto;
-    margin-top: 53px;
+    box-sizing: border-box;
+    margin-top: 45px;
     padding: 0;
+    border: 2px solid white;
+    background-color: white;
 }
 
-input {
+.header__input {
     width: 504px;
-    height: 63px;
+    height: 62px;
     padding: 0;
     border: none;
     outline: none;
@@ -82,14 +78,15 @@ input {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    background: white;
+    background-color: white;
     letter-spacing: 2.8px;
     color: #9e9c9c;
 }
 
 .header__button {
     width: 150px;
-    height: 63px;
+    height: 62px;
+    margin-right: 0;
     border: none;
     background: #5474fd;
     box-sizing: border-box;
@@ -97,6 +94,7 @@ input {
 }
 
 .header__font_btn {
+    margin-left: 25px;
     font-family: Aleo;
     font-style: normal;
     font-weight: normal;
@@ -113,14 +111,13 @@ input {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 20px;
-    margin-left: 15px;
-    font-weight: lighter;
+    margin-left: 10px;
     color: #ffffff;
 }
 
 .header__scroll {
-    width: 123px;
-    height: 40px;
+    width: 105px;
+    height: 30px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -131,7 +128,8 @@ input {
 
 .header__scroll_text {
     height: 23px;
-    margin-top: 142px;
+    margin-top: 105px;
+
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -141,6 +139,12 @@ input {
     letter-spacing: 2.8px;
     color: #ffffff;
     box-sizing: border-box;
+    transition-duration: 0.5s;
+}
+
+.header__scroll_text:hover {
+    font-weight: bold;
+    color: #5474fd;
 }
 
 .header__scroll_shevron {
@@ -150,22 +154,25 @@ input {
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    margin-top: 5px;
 }
 
 /* section navigator */
 
 .nav {
-    min-height: 83px;
-    /* max-width: 100%; */
-    background-size: 100%;
+    height: 83px;
+    /* width: 1770px; */
+    margin-top: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-size: cover;
     background-color: #5474fd;
 }
 
 .nav__flex-container {
-    max-width: 1110px;
+    max-width: 1140px;
     height: 83px;
     padding: 0;
+    margin-top: 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -173,10 +180,9 @@ input {
 }
 
 .nav__bhromaon {
-    width: 450px;
+    width: 170px;
     height: 26px;
     margin: auto 0;
-
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
@@ -189,27 +195,40 @@ input {
     color: #ffffff;
 }
 
-.nav__whoweare {
-    width: 125px;
+.nav__empty {
+    width: 400px;
     height: 26px;
 }
 
+.nav__whoweare {
+    width: 135px;
+    height: 26px;
+    transition-duration: 0.5s;
+}
+
+.nav__transform:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    font-weight: bold;
+    color: darkblue;
+}
+
 .nav__whatwedo {
-    width: 125px;
+    width: 135px;
     height: 26px;
 }
 
 .nav__travel {
-    width: 145px;
+    width: 150px;
     height: 26px;
 }
 
 .nav__contactus {
-    width: 125px;
+    width: 88px;
     height: 26px;
 }
 
-.font_nav {
+.nav_font {
     margin: auto 0;
     font-family: Aleo;
     font-style: normal;
@@ -227,16 +246,19 @@ input {
 .choose_us {
     height: 685px;
     margin-top: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 183px;
     background-image: url(/img/landskape_2.svg);
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-size: cover;
 }
 
 .choose_us__box {
     width: 1110px;
-    height: 460;
+    height: 460px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
@@ -244,17 +266,15 @@ input {
 }
 
 .choose_us__about {
-    width: 560px;
+    width: 545px;
     height: 350px;
-    padding: 0px;
-    /* margin-left: 330px; */
+    padding-top: 2px;
     /* background-color: darkkhaki; */
 }
 
 .choose_us__title {
     width: 288px;
     height: 26px;
-    margin-bottom: 50px;
     font-family: Aleo;
     font-style: normal;
     font-weight: normal;
@@ -265,11 +285,10 @@ input {
 }
 
 .choose_us__text {
-    width: 560px;
+    width: 545px;
     height: 158px;
     margin-top: 45px;
     margin-bottom: 45px;
-
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -338,8 +357,10 @@ input {
     height: 340px;
     padding-top: 48px;
     margin-top: 0px;
-    background-size: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
     background-color: #333333;
+    background-size: cover;
 }
 
 .select__elements {
@@ -375,6 +396,7 @@ input {
 .select__blue {
     color: #00a2ff;
 }
+
 .select__orang {
     color: #ff6363;
 }
@@ -382,7 +404,6 @@ input {
 .select__text {
     width: 220px;
     height: 25px;
-    /* margin: 0 auto; */
     font-family: Aleo;
     font-style: normal;
     font-weight: normal;
@@ -401,27 +422,27 @@ input {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    /* background-color: yellowgreen; */
-}
+    }
 
 .select__parabola {
     width: 300px;
     height: 100px;
     color: #7f7f7f;
-    /* background-color: slateblue; */
-}
+    }
+
 
 /* section_3 */
 
 .spain {
     height: 700px;
     margin-top: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 230px;
     padding-left: 18.6%;
     background-image: url(/img/landskape_3.svg);
-    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-size: cover;
 }
 
 .spain__book {
@@ -480,14 +501,15 @@ input {
 /* section_4 */
 
 .madrid {
-    height: 700px;
+    height: 698px;
     margin-top: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 230px;
-    padding-left: 50%; /* 900px */
+    padding-left: 50.9%;
     background-image: url(/img/landskape_4.svg);
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* section_5 */
@@ -495,11 +517,12 @@ input {
 .tourist_say {
     height: 730px;
     margin-top: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 128px;
     background-image: url(/img/landskape_5.svg);
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .tourist_say__title {
@@ -507,7 +530,6 @@ input {
     height: 26px;
     margin: 0 auto;
     margin-bottom: 91px;
-
     font-family: Aleo;
     font-style: normal;
     font-weight: normal;
@@ -519,20 +541,18 @@ input {
 }
 
 .tourist_say__box {
-    width: 1110px;
+    width: 1140px;
     height: 284px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
-    background-color: darksalmon;
+    background-color: #333333;
 }
 
 .picture_3 {
     width: 445px;
-    /* height: 284px; */
     background-position: bottom;
-    /* margin-bottom: 0px; */
-}
+    }
 
 .tourist_say__about {
     width: 668px;
@@ -540,7 +560,6 @@ input {
     padding-left: 62px;
     padding-right: 25px;
     padding-bottom: 40px;
-    background-color: #333333;
     box-sizing: border-box;
     /* background-color: mediumspringgreen; */
 }
@@ -566,7 +585,6 @@ input {
     height: 165px;
     margin-top: 5px;
     font-family: inherit;
-    /* font-family: FontAwesome; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -590,14 +608,15 @@ input {
 .footer {
     height: 271px;
     margin-top: 0px;
-    padding-top: 122px;
-    background-size: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 125px;
     background: #232323;
 }
 
 .footer__box {
     width: 200px;
-    height: 110px;
+    height: 100px;
     margin: 0 auto;
     /* background-color: lightskyblue; */
 }
@@ -606,8 +625,7 @@ input {
     width: 175px;
     height: 26px;
     margin: 0 auto;
-    margin-bottom: 10px;
-
+    margin-bottom: 8px;
     font-family: inherit;
     font-style: normal;
     font-weight: bold;
@@ -621,9 +639,10 @@ input {
 }
 
 .footer__safe {
-    width: 196px;
+    width: 190px;
     height: 26px;
-    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 22px;
     font-family: inherit;
     font-style: normal;
     font-weight: normal;
@@ -636,18 +655,15 @@ input {
 }
 
 .footer_socialweb {
-    width: 180px;
-    height: 26px;
-    margin-left: 15px;
-    margin-top: 15px;
+    width: 200px;
+    height: 18px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    /* background-color: teal; */
+    justify-content: space-around;
 }
 
 .footer__webfont {
-    width: 18px;
+    width: 20px;
     height: 18px;
     font-style: normal;
     font-weight: normal;
@@ -655,53 +671,41 @@ input {
     line-height: 16px;
     text-align: center;
     align-items: center;
-    border-radius: 30%;
+    border-radius: 50%;
+    background-size: 0.5%;
     cursor: pointer;
     color: white;
-    /* background-color: tan; */
+    /* background-color: white; */
 }
 
 .footer__facebook:hover {
-    font-weight: bold;
+    transform: scale(1.2);
     font-size: 22px;
-    /* cursor: pointer; */
     color: #3b5998;
 }
 
 .footer__twitter:hover {
-    font-weight: bold;
+    transform: scale(1.2);
     font-size: 22px;
-    /* cursor: pointer; */
     color: #1da1f2;
 }
 
 .footer__linkedin:hover {
-    font-weight: bold;
+    transform: scale(1.2);
     font-size: 22px;
-    /* cursor: pointer; */
     color: #0e76a8;
 }
 
 .footer__youtube:hover {
-    width: 20px;
-    height: 16px;
-    font-weight: bold;
+    transform: scale(1.2);
     font-size: 22px;
-    line-height: 15px;
-    text-align: center;
-    align-items: center;
-    border-radius: 50%;
     background-color: white;
     color: #c4302b;
 }
 
 .footer__pinterest:hover {
-    font-weight: bold;
+    transform: scale(1.2);
     font-size: 22px;
-    text-align: center;
-    align-items: center;
-    line-height: 15px;
-    border-radius: 50%;
     background-color: white;
     color: #e60023;
 }
