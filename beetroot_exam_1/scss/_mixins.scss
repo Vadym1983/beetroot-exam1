@@ -1,0 +1,119 @@
+@mixin margin-auto {
+    margin: 0 auto;
+}
+
+@mixin spain-box {
+    .spain__book {
+        width: 540px;
+        height: 370px;
+        padding-top: 47px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        background: #232323;
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        .spain__country {
+            width: 80px;
+            height: 26px;
+            margin-bottom: 23px;
+            font-family: inherit;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            align-items: center;
+            letter-spacing: 1.5px;
+            color: #e8e8e8;
+        }
+        .spain__title {
+            width: 241px;
+            height: 26px;
+            margin-bottom: 13px;
+            font-family: inherit;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            align-items: center;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        .spain__text {
+            width: 508px;
+            height: 78px;
+            margin-bottom: 46px;
+            font-family: inherit;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            align-items: center;
+            color: #e8e8e8;
+        }
+    }
+}
+
+@mixin btn-properties {
+        font-family: Aleo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    
+}
+
+@mixin btn-standard {
+        width: 228px;
+        height: 63px;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        background: -webkit-linear-gradient(
+            45deg,
+            rgb(73, 107, 254) 42%,
+            rgb(84, 116, 253) 42%
+        );
+        background: -moz-linear-gradient(
+            45deg,
+            rgb(73, 107, 254) 42%,
+            rgb(84, 116, 253) 42%
+        );
+        background: linear-gradient(
+            45deg,
+            rgb(73, 107, 254) 42%,
+            rgb(84, 116, 253) 42%
+        );
+}
+
+@mixin media-screen-large {
+    @media screen and (max-width: $screen-large){
+        @content;
+    }
+}
+
+@mixin media-screen-medium {
+    @media screen and (max-width: $screen-medium){
+        @content;
+    }
+}
+
+@mixin media-screen-tablet {
+    @media screen and (max-width: $screen-tablet){
+        @content;
+    }
+}
+
+@mixin media-screen-small {
+    @media screen and (max-width: $screen-small){
+        @content;
+    }
+}
+
+@mixin media-screen-xs {
+    @media screen and (max-width: $screen-xs){
+        @content;
+    }
+}
