@@ -2,6 +2,47 @@
     margin: 0 auto;
 }
 
+@mixin font-style-JosefinSans16 {
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+text-align: left;
+align-items: center;
+}
+
+@mixin font-style-JosefinSans24 {
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 26px;
+align-items: center;
+text-transform: uppercase;
+}
+
+@mixin font-style-Aleo {
+font-family: Aleo;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+}
+
+@mixin font-style-Aleo36 {
+font-family: Aleo;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 26px;
+align-items: center;
+}
+
+
 @mixin spain-box {
     .spain__book {
         width: 540px;
@@ -42,13 +83,8 @@
             width: 508px;
             height: 78px;
             margin-bottom: 46px;
-            font-family: inherit;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
-            align-items: center;
             color: #e8e8e8;
+            @include font-style-JosefinSans16;
         }
     }
 }
@@ -86,6 +122,12 @@
             rgb(73, 107, 254) 42%,
             rgb(84, 116, 253) 42%
         );
+}
+
+@mixin media-screen-grand {
+    @media screen and (max-width: $screen-large){
+        @content;
+    }
 }
 
 @mixin media-screen-large {
