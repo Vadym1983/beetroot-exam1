@@ -40,8 +40,8 @@ font-weight: normal;
 font-size: 36px;
 line-height: 26px;
 align-items: center;
+text-align: center;
 }
-
 
 @mixin spain-box {
     .spain__book {
@@ -125,7 +125,7 @@ align-items: center;
 }
 
 @mixin media-screen-grand {
-    @media screen and (max-width: $screen-large){
+    @media screen and (max-width: $screen-grand){
         @content;
     }
 }
@@ -159,3 +159,10 @@ align-items: center;
         @content;
     }
 }
+
+// 1920
+// 1600
+// 1280
+// 1024
+// 720
+// 320
